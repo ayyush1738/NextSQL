@@ -1,19 +1,20 @@
-export const Navbar = () => {
+export const User = () => {
     return(
         <>
-            <div class="table-title">
-				<div class="row">
-					<div class="col-sm-6">
-						<h2>NextJS-MySQL <b>CRUD</b></h2>
-					</div>
-					<div class="col-sm-6">
-						<a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Add New Employee</span></a>
-						<a href="#" class="delete_all_data btn btn-danger"><i class="material-icons">&#xE15C;</i> <span>Delete</span></a>						
-						<input type = "text" class = "form-control" style = "width : 200px;float : right; height :34px;" name = "search_user" placeholder = "Search a username..." />
-					</div>
-					<div></div>
-				</div>
-			</div>
+            <tr>
+				<td>
+					<span class="custom-checkbox">
+                        <input type="checkbox" id="data_checkbox" class="data_checkbox" name="data_checkbox" value="" />
+						<label for="data_checkbox"></label>
+					</span>
+				</td>
+				<td>Anand Raj</td>
+				<td>Rajanand@gmail.com</td>
+				<td>
+					<a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+					<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+				</td>
+			</tr>
         </>
     )
 }
