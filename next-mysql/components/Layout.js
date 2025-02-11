@@ -1,3 +1,7 @@
+import { Alert } from "./Alert";
+import { Pagination } from "./Pagination";
+import { UsersTable } from "./UsersTable";
+import { Navbar } from "./Navbar";
 export const Layout = () => {
     return (
         <>
@@ -69,6 +73,16 @@ export const Layout = () => {
                                 <input type="submit" className="btn btn-info" value="Save" />
                             </div>
                         </form>
+                    </div>
+                </div>
+            </div>
+            <div className="container-xl">
+	            <div className="table-responsive d-flex flex-column">
+                    <Alert />
+                    <div className="table-wrapper">
+                        <Navbar/>
+                        <UsersTable/>
+                        <Pagination/>
                     </div>
                 </div>
             </div>
