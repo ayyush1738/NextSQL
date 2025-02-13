@@ -2,6 +2,7 @@ export const User = () => {
     return(
         <>
             <tr>
+				<input type="hidden" id="userId" name="id" value = "" />
 				<td>
 					<span class="custom-checkbox">
                         <input type="checkbox" id="data_checkbox" class="data_checkbox" name="data_checkbox" value="" />
